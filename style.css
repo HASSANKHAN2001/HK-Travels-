@@ -28,7 +28,7 @@ html {
 }
 
 header {
-    position: sticky;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -111,7 +111,7 @@ header .search-bar-container label:hover {
 }
 
 .login-form-container {
- position: absolute;
+    position: absolute;
     top: -120%;
     left: 0;
     z-index: 10000;
@@ -658,6 +658,7 @@ section {
         top: 100%;
         right: 0;
         left: 0;
+        /* width: 90%; */
         background: #333;
         border-top: .1rem solid rgba(255, 255, 255, .2);
         padding: 1rem 2rem;
