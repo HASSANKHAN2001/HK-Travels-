@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Mochiy+Pop+P+One&family=Rowdies:wght@300;400;700&family=Supermercado+One&display=swap');
 :root {
-    --Org: #ffa500;
+    --orange: #ffa500;
 }
 
 * {
     font-family: 'Mochiy Pop P One', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    text-transform: capitalize;
     outline: none;
     border: none;
-    text-transform: capitalize;
     text-decoration: none;
     transition: all .2s linear;
 }
 
 *::selection {
-    background-color: var(--Org);
-    color: white;
+    background: var(--orange);
+    color: #fff;
 }
 
 html {
@@ -27,8 +27,46 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0
+}
+
+.heading span {
+    font-size: 3.5rem;
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.heading span.space {
+    background: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 20rem;
+}
+
+.btn:hover {
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+}
+
 header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -48,7 +86,7 @@ header .logo {
 }
 
 header .logo span {
-    color: var(--Org);
+    color: var(--orange);
 }
 
 header .navbar a {
@@ -58,7 +96,7 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-    color: var(--Org);
+    color: var(--orange);
 }
 
 header .icons i {
@@ -69,7 +107,7 @@ header .icons i {
 }
 
 header .icons i:hover {
-    color: var(--Org);
+    color: var(--orange);
 }
 
 header .search-bar-container {
@@ -107,11 +145,11 @@ header .search-bar-container label {
 }
 
 header .search-bar-container label:hover {
-    color: var(--Org);
+    color: var(--orange);
 }
 
 .login-form-container {
-    position: absolute;
+    position: fixed;
     top: -120%;
     left: 0;
     z-index: 10000;
@@ -154,8 +192,8 @@ header .search-bar-container label:hover {
 }
 
 .login-form-container form .box:focus {
-    border-color: var(--Org);
-    color: black;
+    border-color: var(--orange);
+    ;
 }
 
 .login-form-container form #remember {
@@ -164,22 +202,6 @@ header .search-bar-container label:hover {
 
 .login-form-container form label {
     font-size: 1.5rem;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    color: white;
-    padding: .8rem 3rem;
-    background: var(--Org);
-    border: .2rem solid var(--Org);
-    cursor: pointer;
-    font-size: 1.7rem;
-}
-
-.btn:hover {
-    background-color: rgba(255, 165, 0, .2);
-    color: var(--Org);
 }
 
 .login-form-container form .btn {
@@ -194,7 +216,7 @@ header .search-bar-container label:hover {
 }
 
 .login-form-container form p a {
-    color: var(--Org);
+    color: var(--orange);
 }
 
 .login-form-container form p a:hover {
@@ -207,17 +229,13 @@ header .search-bar-container label:hover {
     top: 2rem;
     right: 3rem;
     font-size: 5rem;
+    color: #fff;
     cursor: pointer;
-    color: white;
-}
-
-.login-form-container.active {
-    top: 0;
 }
 
 #menu-bar {
-    color: white;
-    border: 1rem solid white;
+    color: #fff;
+    border: .1rem solid #fff;
     border-radius: 2rem;
     font-size: 3rem;
     padding: .5rem 1.2rem;
@@ -281,33 +299,7 @@ header .search-bar-container label:hover {
 }
 
 .home .controls .vid-btn.active {
-    background: var(--Org);
-}
-
-section {
-    padding: 2rem 9%;
-}
-
-.heading {
-    text-align: center;
-    padding: 2.5rem 0;
-}
-
-.heading span {
-    font-size: 3.5rem;
-    padding: 2rem 1rem;
-    border-radius: .5rem;
-    color: var(--Org);
-    background: rgba(265, 165, 0, 0.2);
-}
-
-.heading span.space {
-    background: none;
-}
-
-.btn {
-    border: 0.2rem solid var(--Org);
-    border-radius: 10rem;
+    background: var(--orange);
 }
 
 .book .row {
@@ -329,7 +321,7 @@ section {
     flex: 1 1 40rem;
     padding: 2rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
-    border-radius: 0.5rem;
+    border-radius: .5rem;
 }
 
 .book .row form .inputBox {
@@ -337,12 +329,13 @@ section {
 }
 
 .book .row form .inputBox input {
-    padding: 1rem;
     width: 100%;
-    border: 1rem solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
     font-size: 1.7rem;
     color: #333;
     text-transform: none;
+    background-color: #999;
 }
 
 .book .row form input {
@@ -384,30 +377,29 @@ section {
 }
 
 .packages .box-container .box .content h3 i {
-    color: var(--Org);
-    padding-right: 1rem;
+    color: var(--orange);
 }
 
-.packages .box-container .box .content h3 p {
+.packages .box-container .box .content p {
     font-size: 1.7rem;
-    padding: 1rem 0;
     color: #666;
+    padding: 1rem 0;
 }
 
-.packages .box-container .box .stars i {
+.packages .box-container .box .content .stars i {
     font-size: 1.7rem;
-    color: var(--Org);
+    color: var(--orange);
 }
 
 .packages .box-container .box .content .price {
     font-size: 2rem;
-    margin-top: 1rem;
-    color: #333
+    color: #333;
+    padding-top: 1rem;
 }
 
 .packages .box-container .box .content .price span {
-    font-size: 1.5rem;
     color: #666;
+    font-size: 1.5rem;
     text-decoration: line-through;
 }
 
@@ -425,20 +417,20 @@ section {
 }
 
 .services .box-container .box i {
-    color: var(--Org);
     padding: 1rem;
     font-size: 5rem;
+    color: var(--orange);
 }
 
 .services .box-container .box h3 {
-    color: #333;
     font-size: 2.5rem;
+    color: #333;
 }
 
 .services .box-container .box p {
+    font-size: 1.5rem;
     color: #666;
     padding: 1rem 0;
-    font-size: 1.5rem;
 }
 
 .services .box-container .box:hover {
@@ -454,7 +446,7 @@ section {
 .gallery .box-container .box {
     overflow: hidden;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
-    border: 1rem solid white;
+    border: 1rem solid #fff;
     border-radius: .5rem;
     flex: 1 1 30rem;
     height: 25rem;
@@ -485,13 +477,13 @@ section {
 
 .gallery .box-container .box .content h3 {
     font-size: 2.5rem;
-    color: var(--Org);
+    color: var(--orange);
 }
 
 .gallery .box-container .box .content p {
     font-size: 1.5rem;
-    color: white;
-    padding: 0.5rem 0;
+    color: #eee;
+    padding: .5rem 0;
 }
 
 .review .review-slider {
@@ -525,7 +517,7 @@ section {
 }
 
 .review .box .stars i {
-    color: var(--Org);
+    color: var(--orange);
     font-size: 1.7rem;
 }
 
@@ -536,35 +528,35 @@ section {
     align-items: center;
 }
 
-.contact .row .image img {
-    width: 100%;
-}
-
 .contact .row .image {
     flex: 1 1 35rem;
 }
 
+.contact .row .image img {
+    width: 100%;
+}
+
 .contact .row form {
     flex: 1 1 50rem;
+    padding: 2rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
-    padding: 2rem;
 }
 
 .contact .row form .inputBox {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .contact .row form .inputBox input,
 .contact .row form textarea {
-    font-size: 1.7rem;
     width: 49%;
     margin: 1rem 0;
     padding: 1rem;
+    font-size: 1.7rem;
     color: #333;
-    background-color: white;
+    background: white;
     text-transform: none;
 }
 
@@ -613,7 +605,7 @@ section {
 }
 
 .footer .box-container .box a:hover {
-    color: var(--Org);
+    color: var(--orange);
     text-decoration: underline;
 }
 
@@ -628,7 +620,7 @@ section {
 }
 
 .footer .credit span {
-    color: var(--Org);
+    color: var(--orange);
 }
 
 
@@ -658,7 +650,6 @@ section {
         top: 100%;
         right: 0;
         left: 0;
-        /* width: 90%; */
         background: #333;
         border-top: .1rem solid rgba(255, 255, 255, .2);
         padding: 1rem 2rem;
