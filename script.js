@@ -46,12 +46,13 @@ var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 2000,
         disableOnInteraction: false,
     },
     breakpoints: {
-        640: {
+        0: {
             slidesPerView: 1,
+
         },
         768: {
             slidesPerView: 2,
