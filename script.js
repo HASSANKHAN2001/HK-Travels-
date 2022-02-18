@@ -86,6 +86,7 @@ var swiper = new Swiper(".brand-slider", {
     },
 });
 
+
 function toggleShow() {
     var a = confirm('Confirm your ticket');
     if (a) {
