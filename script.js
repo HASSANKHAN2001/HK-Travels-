@@ -85,3 +85,12 @@ var swiper = new Swiper(".brand-slider", {
         },
     },
 });
+
+function toggleShow() {
+    var a = confirm('Confirm your ticket');
+    if (a) {
+        alert("Now you are our golden customer");
+    } else {
+        alert("Sorry no offer is available for you");
+    }
+}
