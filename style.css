@@ -338,6 +338,17 @@ header .search-bar-container label:hover {
     background-color: #999;
 }
 
+.book .row form .inputBox #country {
+    width: 100%;
+    padding: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    background-color: #999;
+    border-radius: 10rem;
+}
+
 .book .row form input {
     border-radius: 10rem;
 }
